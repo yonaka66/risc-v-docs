@@ -1,6 +1,6 @@
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 1em;">
-<img src="/_media/madness.svg" style="width: 32px;">
+<img src="_media/madness.svg" style="width: 32px;">
 <div style="display: flex; flex-direction: column;">
   <span style="font-size: 18pt; font-weight: 900; color: black;">RISC-V Docs</span>
   <span style="font-size: 12pt; font-weight: 600; color: black;">by CSEC@RUB</span>
