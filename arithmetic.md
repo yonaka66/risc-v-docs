@@ -94,4 +94,4 @@ The `li` instruction can be used to set a register value of up to 32 bits in a r
      
 The **NOP** instruction is disassembled into <pre><code class="inline-code lang-asm">addi x0, x0, 0</code></pre> and does not perform any architectually visible change except for increasing the program counter.
 
-Since pseudo-instructions can be translated to more than one instruction, a distinct instruction format cannot be specified, instead it must be used according to the instruction formats of the underlying instructions. The ripes disassembled view can help with that.
+Since pseudo-instructions can be translated to more than one instruction, a distinct instruction format cannot be specified, instead it must be used according to the instruction formats of the underlying instructions. The Ripes disassembled view can help with that.

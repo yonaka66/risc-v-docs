@@ -24,11 +24,11 @@
     </tr>
 </table>
 
-Jumps are unconditional branches, here the branch is always taken. Unlike conditional branches, the return address is saved in rd, before the sign-extended immediate offset is added to the pc, therefore returning to the previous part of the code is easily possible.
+Jumps are unconditional branches, meaning that the branch is always taken. Unlike conditional branches, the return address is saved in \\(rd\\), before the sign-extended immediate offset is added to the \\(pc\\), therefore returning to the previous part of the code is easily possible.
 
 Instead of an immediate value, using a label is also possible, see [loops and functions](loops.md) for more information.
 
-The standard software calling convention uses x1 as the return address register, if no other register is specified in the instruction.
+The standard software calling convention uses \\(x1\\) as the return address register, if no other register is specified in the instruction.
 
 #### pseudo-instructions
 
@@ -47,4 +47,4 @@ The standard software calling convention uses x1 as the return address register,
     </tr>
 </table>
 
-When using this pseudoinstruction the return address is discarded by using x0 as rd, making it a useful tool for [loops](loops.md).
+When using this pseudoinstruction the return address is discarded by using \\(x0\\) as \\(rd\\), making it a useful tool for [loops](loops.md).

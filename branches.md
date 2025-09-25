@@ -58,20 +58,20 @@
     </tr>
 </table>
 
-Branch instructions are useful tools to manipulate the control flow of a program. They compare two registers and take the branch if the condition evaluates to true. The program then continues at the specified location in the code. The immediate offset is sign-extended.
+Branch instructions are useful tools to manipulate the control flow of a program. They compare two registers and "take" the branch if the condition evaluates to true. The program then continues at the specified location in the code. The immediate offset is sign-extended.
 
 
-This works by making use of the **program counter** (pc). The pc works like an arrow, always pointing to the instruction that is to be executed. However, by increasing (or decreasing) the program counter it is possible to break out of this sequence. 
-By default, the pc increments by 4 after each finished instruction, since all instructions are stored in a segment of 4 bytes in memory. 
+This works by making use of the **program counter** \\((pc)\\). The pc works like an arrow, always pointing to the instruction that is to be executed. However, by increasing (or decreasing) the program counter it is possible to break out of this sequence. 
+By default, the \\(pc\\) increments by 4 after each finished instruction, since all instructions are stored in a segment of 4 bytes in memory. 
 
-In ripes, the address of each instruction can be taken from the disassembled view, the program counter is indicated by the red rectangle, that marks the current instruction. The current program counter can also be extracted by using the instruction [`auipc rd, 0` asm].
+In Ripes, the address of each instruction can be taken from the disassembled view, the program counter is indicated by the red rectangle, that marks the current instruction. The current program counter can also be extracted by using the instruction [`auipc rd, 0` asm].
 
-Instead of using an immediate value, it is also possible to use labels, see [loops and functions](loops.md) for more information.
+Instead of using an immediate value, it is also possible to use **labels**, see [loops and functions](loops.md) for more information.
 
 If a branch with a condition that always evaluates to true is desirable, **jumps** are the more appropriate tool.
 
 
-#### pseudo-instructions
+#### Pseudo-instructions
 <table>
     <tr>
         <th>Instruction</th>

@@ -24,12 +24,12 @@
     </tr>
 </table>
 
-Division is used to divide rs1 by rs2, **rounding towards zero**, if applicable. Both values are treated as signed integers.
+Division is used to divide \\(rs1\\) by \\(rs2\\), **rounding towards zero**, if applicable. Both values are treated as signed integers.
 
-The Remainder-Instruction provides the reaminder of the corresponding integer division.
+The Remainder-Instruction provides the remainder of the corresponding integer division.
 The sign of the result is the same as the sign of the dividend.
 
-If both quotient and remainder are needed, the recommended sequence of code is to first divide then calculate the remainder. In this case rd of the quotient cannot be the same as rs1 or rs2.
+If both quotient and remainder are needed, the recommended sequence of code is to first divide then calculate the remainder. In this case \\(rd\\) of the quotient cannot be the same as \\(rs1\\) or \\(rs2\\).
 
 **Division by zero** as well as **overflow** will not cause any traps, instead it has to be detected based on the instructions result:
 
@@ -65,7 +65,7 @@ If both quotient and remainder are needed, the recommended sequence of code is t
 
 As the table depicts, division by zero can easily be checked for and an overflow only occurs if the most-negative integer is divided by -1, so it actually can already be avoided before the division takes place. Unsigned division overflow cannot occur.
 
-#### pseudo-instructions
+#### Pseudo-instructions
 <table>
     <tr>
         <th>Instruction</th>

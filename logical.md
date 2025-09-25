@@ -78,7 +78,7 @@ These instructions are used to perform bitwise logical operations on the specifi
   </tr>
 </table>
 
-Logical operations can also be used to extract or set bits and compare values by using **bitmasks**. The term bitmask refers to a binary pattern used as a mask that only performs the desired operation on the specified bits. One example of a bitmask operation is the not instruction:
+Logical operations can also be used to extract or set bits and compare values by using **bitmasks**. The term bitmask refers to a binary pattern used as a mask that only performs the desired operation on the specified bits. One example of a bitmask operation is the not-instruction:
 
 <table>
 <tr>
@@ -92,4 +92,4 @@ Logical operations can also be used to extract or set bits and compare values by
 </tr>
 </table>
 
-Since pseudo-instructions can be translated to more than one instruction, a distinct instruction format cannot be specified, instead it must be used according to the instruction formats of the underlying instructions. The ripes disassembled view can help with that.
+Since pseudo-instructions can be translated to more than one instruction, a distinct instruction format cannot be specified, instead it must be used according to the instruction formats of the underlying instructions. The Ripes disassembled view can help with that.

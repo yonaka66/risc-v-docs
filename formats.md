@@ -98,16 +98,16 @@ Each instruction is encoded in 32 bits. However since different instructions nee
 </table>
 
 #### Instruction Terminology
-- rs1: Source register 1
-- rs2: Source register 2
-- rd: Destination register
-- imm[n:m]: Bits m to n of an immediate
-- opcode: Determines the instruction
-- funct3/funct7: function bit fields
+- \\(rs1\\): Source register 1
+- \\(rs2\\): Source register 2
+- \\(rd\\): Destination register
+- \\(imm[n:m]\\): Bits \\(m\\) to \\(n\\) of an immediate
+- \\(opcode\\): Determines the instruction
+- \\(funct3/funct7\\): function bit fields
 
-RISC-V Instructions consist of registers, opcode, immediates and function bit fields. An instruction can contain up to 3 registers that are encoded in the bits specified by the instruction format that is used, e.g. [`add t0, t1, t2` asm] uses 3 registers that are then encoded in the instruction (rd=t0, rs1=t1, rs2=t2). 
+RISC-V Instructions consist of registers, opcode, immediates and function bit fields. An instruction can contain up to 3 **registers** that are encoded in the bits specified by the instruction format that is used, e.g. [`add t0, t1, t2` asm] uses 3 registers that are then encoded in the instruction \\((rd=t0, rs1=t1, rs2=t2)\\). 
 
 The **opcode** works in a similar manner as the name of the instruction. However, for Instructions using the R, I, S or SB format it is not unique. Therefore we need the function bit fields **funct3** and **funct7**, these provide additional information on what exact operation to perform. 
 
-Finally, **immediates** are values that are specified directly in the instruction, they therefore have to be stored in the instruction. When using an instruction format with immediates, the highest possible bit of said immediate is always in bit 31. Keep in mind that you can only encode integer equal or below that bit maximum in these instructions. If you want to work on an integer that uses more bits, you need to find a workaround.
+Finally, **immediates** are values that are specified together with the instruction, instead of using a value from a register. They therefore have to be stored in the instruction. When using an instruction format with immediates, the highest possible bit of said immediate is always in position 31 of the instruction. However different instruction formats have different amounts of space for these immediates. Keep in mind that you can only encode integer equal or below that bit maximum in these instructions. If you want to work on an integer that uses more bits, you need to find a workaround.
 

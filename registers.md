@@ -2,7 +2,9 @@
 
 Our RISC-V processor has 32 registers that each have a length of 32 bits. Register values can be interpreted as binary, decimal, hexadecimal or octal values. It is important to note that this interpretation is not wired into the registers, instead it has to be reflected in our programs.
 
-Register x0 is hardwired with all bits set to 0. Note that writes to x0 will not throw an exception or error, but will also not change the content of the register.
+Register **x0** is **hardwired** with all bits set to 0. Note that writes to x0 will not throw an exception or error, but will also not change the content of the register.
+<br>
+<br>
 <table style="display: flex; justify-content: center;">
   <tr>
     <th>Register</th>
@@ -71,7 +73,7 @@ Register x0 is hardwired with all bits set to 0. Note that writes to x0 will not
   </tr>
 </table>
 
-Registers can be accessed by their name or their **alias**, e.g the following instuctions are equivalent:
+Registers can be accessed by their name or their **alias**, therefore the following instuctions are equivalent:
 
 ```asm
 li x5, 4

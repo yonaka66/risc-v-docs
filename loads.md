@@ -48,6 +48,6 @@
 
 Loads are used to copy data from memory and write it into a register. Along with stores, these are the only instructions that can access memory. All other instructions operate on registers only.
 
- One can retrieve either a full 32-bit value (word), the lower 16 bits of a value (halfword) or the lowest 8 bits of a value (byte). When lh and lb are used, the retrieved value is sign extended before being put into rd, using lhu and lbu the value is zero-extended.
+ One can retrieve either a full 32-bit value (word), the lower 16 bits of a value (halfword) or the lowest 8 bits of a value (byte). When `lh` and `lb` are used, the retrieved value is sign extended before being put into \\(rd\\), using `lhu` and `lbu` the value is zero-extended.
 
- The address from which the value is retrieved is calculated by adding the sign-extended 12-bit immediate offset to rs1.
+ The address from which the value is retrieved is calculated by adding the sign-extended 12-bit immediate offset to \\(rs1\\).

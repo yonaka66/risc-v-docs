@@ -8,7 +8,7 @@ In RISC-V, most operations are performed using a small set of fast storage locat
 
 To experiment with RISC-V programs and understand how they execute, we will use Ripes, a visual simulator that shows how instructions affect registers and memory.
 
-In this guide you can find information on [instruction formats](formats.md) and [registers]([registers.md) as well as all instructions from the base instruction set and [multiplication](multiplication.md), [division](division.md) and [remainder](division.md) instructions from the M-Extension.
+In this guide you can find information on [instruction formats](formats.md) and [registers]([registers.md) as well as all instructions from the base instruction set and [multiplication](multiplication.md) and [division](division.md) instructions from the M-Extension.
 
 An **overview** of all this information is available <a  href="_media/RISC-V%20Cheat%20Sheet%20CA.pdf" target="_blank">here</a>. 
 This Cheat Sheet will be provided in the exam as well.

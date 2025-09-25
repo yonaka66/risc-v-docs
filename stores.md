@@ -35,4 +35,4 @@ Stores are used to copy data from registers and write it into memory. Along with
 
  One can store either a full 32 bit value (word), the lower 16 bits of a value (halfword) or the lowest 8 bits of a value (byte).
 
- The address at which the value is stored is calculated by adding the sign-extended 12-bit immediate offset to rs1.
+ The address at which the value is stored is calculated by adding the sign-extended 12-bit immediate offset to \\(rs1\\).

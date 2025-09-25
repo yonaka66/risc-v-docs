@@ -31,3 +31,8 @@
 
 - Resources
   - [Useful links](resources.md)
+
+- Example Programs
+  - [Parity Bit Calculator](example1.md)
+  - [Factorial Calculator](example2.md)
+  - [Pseudo-Random Number Generator](example3.md)

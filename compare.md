@@ -38,7 +38,7 @@
     </tr>
 </table>
 
-Set-comparisons are used to decide if the specified condition applies to rs1. If that is the case, the value 1 is placed into rd, otherwise 0. There are also different instructions for signed and unsigned register values. Comparisons are very useful when checking for **overflow** in signed and unsigned addition.
+Set-comparisons are used to decide if the specified condition applies to \\(rs1\\). If that is the case, the value 1 is placed into \\(rd\\), otherwise 0. There are also different instructions for signed and unsigned register values. Comparisons are very useful when checking for **overflow** in signed and unsigned addition.
 
 #### Pseudo-Instructions
 

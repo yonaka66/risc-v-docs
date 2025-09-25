@@ -55,13 +55,13 @@
   </tr>
 </table>
 
-A shift operation to the left discards the MSB, moves all other bits to the left by one position and fills the LSB with zero. The amount held in the lower 5 bits of rs2 or imm specify how many of these shifts are performed.
+A shift operation to the left discards the MSB, moves all other bits to the left by one position and fills the LSB with zero. The amount held in the lower 5 bits of \\(rs2\\) or \\(imm\\) specify how many of these shifts are performed.
 
-When shifting to the right there are two cases: logical and arithmetic shift. Since in this case, the MSB is not discarded and instead pushed to towards the LSB it might be desirable to keep the sign of the two's complement value in the specified register. Therefore, arithmeric shift keeps the sign intact while logical shift also fills with zeroes.
+When shifting to the right there are two cases: logical and arithmetic shift. Logical shift always fills free bit positions with zeroes while arithmetic shift instead fills with the sign.
 
-Shifts can also be used to perform specific mathematical operations. The result of a left shift is a **multiplication** by 2<sup>n</sup>. In the same way a right shift can perform **division** by 2<sup>n</sup> if the appropriate variant is used.
+Shifts can also be used to perform specific mathematical operations. The result of a left shift by \\(n\\) bits is a **multiplication** by \\(2^n\\). In the same way a right shift can perform **division** by \\(2^n\\) if the appropriate variant is used.
 
 #### Rotations
-A variant of shifts are rotations, where instead of discarding the bits that are pushed out of the register they are instead **re-added** into the register at the other end. There is, however, no specific instruction to perform rotations, instead multiple instructions have to used.
+A variant of shifts are rotations, where instead of discarding the bits that are pushed out of the register they are instead **re-added** into the register at the other end. There is, however, no specific instruction to perform rotations, instead multiple instructions have to be used.
 
 A more detailed explanation of shifts and rotations along with a tool to perform these can be found <a href="https://onlinetoolz.net/bitshift" target="_blank">here</a>.
