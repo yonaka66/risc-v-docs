@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>RISC-V Documentation</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
+  <meta name="description" content="RISC-V Documentation for the Computer Architecture I course at RUB" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <link rel="icon" type="image/svg+xml" href="_media/icon.png">
+  <link rel="icon" type="image/png" href="_media/icon.png">
+  <link rel="stylesheet" href="assets/docsify-theme-vue.css">
+  <script id="MathJax-script" async src="assets/tex-mml-chtml.js"></script>
 
   <style>
     .thin-padding > th {
@@ -34,21 +36,21 @@
         function hightlight(hook, vm) {
           hook.ready(function() {
             Prism.highlightAll();
-            MathJax.typeset();
+            window.MathJax && MathJax.typeset();
           });
           
           hook.doneEach(function() {
             Prism.highlightAll();
-            MathJax.typeset();
+            window.MathJax && MathJax.typeset();
           });
         }
       ]
     }
   </script>
   <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="//unpkg.com/@rakutentech/docsify-code-inline/dist/index.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-nasm.min.js"></script>
+  <script src="assets/docsify-v4.js"></script>
+  <script src="assets/docsify-code-inline.js"></script>
+  <script src="assets/prism-nasm.min.js"></script>
   <script>
     Prism.languages.asm=Prism.languages.nasm;
     Prism.languages.asm = {
