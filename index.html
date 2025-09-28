@@ -52,12 +52,16 @@
   <script src="assets/docsify-code-inline.js"></script>
   <script src="assets/prism-nasm.min.js"></script>
   <script>
-    Prism.languages.asm=Prism.languages.nasm;
     Prism.languages.asm = {
-      "variable": /[^\w](x\d\d?|s\d\d?|a\d|t\d|[tgs]p|ra|zero|pc)/,
-      "punctuation": /,/,
-      "number": /(-?0[xX][0-9a-f]+|-?\d+|[+-]?([0-9]*[.])?[0-9]+)/i,
-      "keyword": /[\w.]{2,8}|j\s/
+    	"comment": /#\s.+$/m,
+    	"punctuation": /^(\w+?):/,
+    	"label": { pattern:/(^\s*)[A-Za-z._?$][\w.?$@~#]*:/, lookbehind:true, alias:"function" },
+    	"variable": /[^\w](x\d\d?|s\d\d?|a\d|t\d|[tgs]p|ra|zero|pc)/m,
+    	"punctuation": /,/,
+    	"number": /(-?0[xX][0-9a-f]+|-?\d+|[+-]?([0-9]*[.])?[0-9]+)/mi,
+      "labelTarget": { pattern: /(\w+)[\s\W]+(?:$|#)/, alias: "punctuation" },
+    	"keyword": [...Prism.languages.nasm.keyword, /(?:[\W\s]|^)([\w.]{2,8}|j)(?:[\W\s]|$)/m],
+    	"number": Prism.languages.nasm.number,
     };
   </script>
 </body>
