@@ -37,10 +37,13 @@
   - [Factorial Calculator](example2.md)
   - [Pseudo-Random Number Generator](example3.md)
 
-<hr>
+<hr style="height: 1px;border: none;color: rgba(0,0,0,.07);background-color: rgba(0,0,0,.07);">
 <div style="text-align: center;">
   © 2025 Natalie Riemer 
   <br>
-  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="color: grey">
-  CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 0.7em;max-height:0.7em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 0.7em;max-height:0.7em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 0.7em;max-height:0.7em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 0.7em;max-height:0.7em;margin-left: .2em;">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="color: grey">CC BY-NC-SA 4.0</a>
+  <img src="assets/cc/cc.svg" alt="CreativeCommons" class="cc-icon" />
+  <img src="assets/cc/by.svg" alt="Attribution" class="cc-icon" />
+  <img src="assets/cc/nc.svg" alt="NonCommercial" class="cc-icon" />
+  <img src="assets/cc/sa.svg" alt="ShareAlike" class="cc-icon" />
 </div>
