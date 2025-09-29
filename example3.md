@@ -3,7 +3,7 @@ This program emulates a Linear Congruential Generator (LCG) and generates the ne
 \\(x_n\\): current random number <br>
 \\(a\\): multiplier <br>
 \\(c\\): increment <br>
-\\(m\\): modulus ( here: \\(m= 32\\))
+\\(m\\): modulus (here: \\(m= 32\\))
 ```asm  
 # Input
 li t0, 1234

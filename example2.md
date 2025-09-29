@@ -21,7 +21,7 @@ loop:
     
 noOverflow:
     mv t0, t1                   # Copy result from t1 to t0
-    j end                       # Jumo to end
+    j end                       # Jump to end
 
 overflow:
     li t0, 0                    # Load 0 into t0
