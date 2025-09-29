@@ -17,6 +17,6 @@ If you are not interested in using the chair's version of Ripes and would like t
 
 - [Ripes Download](https://github.com/mortbopet/Ripes/releases)
 
-- [Web-Version](https://ripes.me/) (not recommended for use in tutorials as the wbsite is frequently down, try using this in incognito-mode for a higher likelyhood of working)
+- [Web-Version](https://ripes.me/) (not recommended for use in tutorials as the website is frequently down, try using this in incognito-mode for a higher likelyhood of working)
 
 - [Documentation](https://github.com/mortbopet/Ripes/tree/master/docs)
