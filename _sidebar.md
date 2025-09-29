@@ -36,3 +36,11 @@
   - [Parity Bit Calculator](example1.md)
   - [Factorial Calculator](example2.md)
   - [Pseudo-Random Number Generator](example3.md)
+
+<hr>
+<div style="text-align: center;">
+  © 2025 Natalie Riemer 
+  <br>
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="color: grey">
+  CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 0.7em;max-height:0.7em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 0.7em;max-height:0.7em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 0.7em;max-height:0.7em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 0.7em;max-height:0.7em;margin-left: .2em;">
+</div>
