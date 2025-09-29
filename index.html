@@ -59,14 +59,13 @@
   <script>
     Prism.languages.asm = {
     	"comment": /#\s.+$/m,
-    	"punctuation": /^(\w+?):/,
-    	"label": { pattern:/(^\s*)[A-Za-z._?$][\w.?$@~#]*:/, lookbehind:true, alias:"function" },
-    	"variable": /[^\w](x\d\d?|s\d\d?|a\d|t\d|[tgs]p|ra|zero|pc)/m,
-    	"punctuation": /,/,
-    	"number": /(-?0[xX][0-9a-f]+|-?\d+|[+-]?([0-9]*[.])?[0-9]+)/mi,
-      "labelTarget": { pattern: /(\w+)[\s\W]+(?:$|#)/, alias: "punctuation" },
-    	"keyword": [...Prism.languages.nasm.keyword, /(?:[\W\s]|^)([\w.]{2,8}|j)(?:[\W\s]|$)/m],
+    	"label": { pattern:/(^\s*)[A-Za-z._?$][\w.?$@~#]*:/m, lookbehind:true, alias:"function" },
     	"number": Prism.languages.nasm.number,
+    	"punctuation": /^(\w+?):/,
+    	"variable": /[^\w](x\d\d?|s\d\d?|a\d|t\d|[tgs]p|ra|zero|pc)/m,
+    	"keyword": [...Prism.languages.nasm.keyword, /(?:[\W\s]|^)([\w.]{2,8}|j|nop)(?:[\W\s]|$)/m],
+      "labelTarget": { pattern: /(\w+)[\s\W]+(?:$|#)/m, alias: "punctuation" },
+    	"punctuation": /,/,
     };
   </script>
 </body>
