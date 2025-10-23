@@ -27,7 +27,7 @@ loop:
     bne t0, t1, loop
 ```
 
-This program increases the value of register \\(t0\\) until it is equal to the value of register \\(t0\\). In this case, instead of jumping via a `j` instruction, a branch is used.
+This program increases the value of register \\(t0\\) until it is equal to the value of register \\(t1\\). In this case, instead of jumping via a `j` instruction, a branch is used.
 
 Note that unless there is a branch that is taken, the program will be executed in sequential order, meaning that as soon as the above branch evaluates to false, code that comes after the loop will be executed. This can be circumvented:
 
