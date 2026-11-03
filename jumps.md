@@ -19,7 +19,7 @@
         <td>jalr</td>
         <td>jalr rd, rs1, imm</td>
         <td>rd = pc+4; pc = rs1 + imm</td>
-        <td>UJ</td>
+        <td>I</td>
         <td>Jump and link register</td>
     </tr>
 </table>
